@@ -24,11 +24,14 @@ class Calculator {
         cout << num1 << " / " << num2 << " = " << divide() << endl;
     }
 
-    T add();
+    // void do_nothing();
+    // T add();
+
+    void do_nothing() {}
+    T add() { return num1 + num2; }
     T subtract() { return num1 - num2; }
     T multiply() { return num1 * num2; }
     T divide() { return num1 / num2; }
-    void print();
 };
 
-extern Calculator<int> * intCalc;
+Calculator<int> * intCalc;
